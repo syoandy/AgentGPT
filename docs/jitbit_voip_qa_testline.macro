@@ -3,6 +3,8 @@ COMMENT : Launch the VoIP softphone from its default installation folder.
 FILE OPEN : C:\Program Files\VoIP Softphone\VoIPSoftphone.exe
 COMMENT : Wait for the softphone window to be available before dialing.
 WAIT FOR WINDOW : *VoIP Softphone*
+COMMENT : Activate the softphone window before sending dial input.
+ACTIVATE WINDOW : *VoIP Softphone*
 COMMENT : Dial the QA test line (EDIT ONLY THIS NUMBER IF NEEDED).
 TYPE TEXT : 786-948-1567
 KEYBOARD : {ENTER}
