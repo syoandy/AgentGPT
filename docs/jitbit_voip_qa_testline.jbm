@@ -1,0 +1,21 @@
+LABEL : START
+COMMENT : Launch MicroSIP softphone.
+FILE OPEN : C:\Users\Mango\AppData\Local\MicroSIP\MicroSIP.exe
+DELAY : 2000
+COMMENT : Wait for MicroSIP window to be ready.
+WAIT FOR WINDOW : *MicroSIP*
+COMMENT : Activate the dial field.
+ACTIVATE WINDOW : *MicroSIP*
+COMMENT : Dial the QA test line.
+TYPE TEXT : 786-948-1567
+KEYBOARD : {ENTER}
+COMMENT : Wait 4500 ms for call to connect.
+DELAY : 4500
+COMMENT : Play local audio file.
+FILE OPEN : C:\Users\Mango\OneDrive\Desktop\aventura_obsesion.wav
+COMMENT : Re-focus MicroSIP before hangup.
+ACTIVATE WINDOW : *MicroSIP*
+COMMENT : Hang up call.
+KEYBOARD : {ESC}
+COMMENT : Restart loop.
+GOTO : START
