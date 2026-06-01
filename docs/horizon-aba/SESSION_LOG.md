@@ -5,6 +5,39 @@
 
 ---
 
+## Session 4 — 2026-06-01
+
+**Goal:** Build attorney-ready legal pack so HIPAA review doesn't drag on  
+**Outcome:** Full legal briefing packet created — ready to email counsel
+
+### Work Completed
+- `legal/ATTORNEY_BRIEFING_PACKET.md` — cover letter + 13 specific binary questions for counsel
+- `legal/STRIPE_BAA_REQUEST_TEMPLATE.md` — email template for Stripe healthcare BAA
+- `legal/EMAIL_BAA_REQUEST_TEMPLATE.md` — provider matrix + email template
+- `legal/TOS_SUBSCRIPTION_LANGUAGE.md` — ROSCA/CA AB 2863/NY GBL §527-a clauses
+- `legal/PRIVACY_POLICY_HEALTH_DATA.md` — HIPAA Privacy Policy section template
+- `legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md` — data dictionary for counsel's PHI determination
+
+### Why This Matters
+Attorney reviews go from "$10k open-ended" to "$1.5k–$5k fixed-fee" when you hand
+counsel a focused scope. This pack gives them exactly that.
+
+### Files Changed
+- `docs/horizon-aba/legal/ATTORNEY_BRIEFING_PACKET.md` — created
+- `docs/horizon-aba/legal/STRIPE_BAA_REQUEST_TEMPLATE.md` — created
+- `docs/horizon-aba/legal/EMAIL_BAA_REQUEST_TEMPLATE.md` — created
+- `docs/horizon-aba/legal/TOS_SUBSCRIPTION_LANGUAGE.md` — created
+- `docs/horizon-aba/legal/PRIVACY_POLICY_HEALTH_DATA.md` — created
+- `docs/horizon-aba/legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md` — created
+
+### Next Milestone
+- Founder fills in `HIPAA_DATA_DICTIONARY_TEMPLATE.md` with actual Horizon data fields
+- Founder finds healthcare-SaaS attorney
+- Founder sends `ATTORNEY_BRIEFING_PACKET.md` + the data dictionary
+- Parallel: wire components into `syoandy/horizon-ab-health` (new session)
+
+---
+
 ## Session 3 — 2026-06-01
 
 **Goal:** Make Obsidian/Graphify/NLM access actionable — not silently blocked  
