@@ -126,6 +126,25 @@
       "file": "docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md"
     },
     {
+      "id": "mandatory-rules",
+      "type": "doctrine",
+      "label": "Horizon Mandatory Rules",
+      "rules_count": 8,
+      "rules": [
+        "Rule 1 — Data Dictionary required before legal review",
+        "Rule 2 — Obsidian sync required at session end",
+        "Rule 3 — Blocker documentation (no silent skips)",
+        "Rule 4 — Horizon Memory Order",
+        "Rule 5 — Context-First (check before creating)",
+        "Rule 6 — Handoff Completeness",
+        "Rule 7 — No Scatter",
+        "Rule 8 — Amendment Protocol"
+      ],
+      "binding_on": "All Horizon entities, all sessions, all AI assistants",
+      "amendment": "Founder + Counselor joint signature only",
+      "file": "docs/horizon-aba/MANDATORY_RULES.md"
+    },
+    {
       "id": "stripe-baa",
       "type": "legal",
       "label": "Stripe Healthcare BAA",
@@ -159,6 +178,8 @@
     { "from": "compliance-audit", "to": "hipaa-review", "type": "blocked-by" },
     { "from": "hipaa-review", "to": "horizon-counselor", "type": "approved-by" },
     { "from": "horizon-counselor", "to": "counselor-doctrine", "type": "governed-by" },
+    { "from": "horizon-counselor", "to": "mandatory-rules", "type": "enforces" },
+    { "from": "horizon-aba", "to": "mandatory-rules", "type": "bound-by" },
     { "from": "horizon-counselor", "to": "horizon-aba", "type": "has-authority-over" },
     { "from": "hipaa-review", "to": "stripe-baa", "type": "requires" },
     { "from": "hipaa-review", "to": "email-baa", "type": "requires" },

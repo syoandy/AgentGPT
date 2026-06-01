@@ -5,6 +5,46 @@
 
 ---
 
+## Session 7 — 2026-06-01
+
+**Goal:** Convert "fill data dictionary" + "sync to Obsidian" into binding rules  
+**Outcome:** MANDATORY_RULES.md created with 8 binding rules; all systems updated
+
+### Work Completed
+- `MANDATORY_RULES.md` — 8 binding rules, signatures pending
+  - Rule 1: Data Dictionary required before legal review
+  - Rule 2: Obsidian sync required at session end
+  - Rule 3: Blocker documentation (no silent skips)
+  - Rule 4: Horizon Memory Order
+  - Rule 5: Context-First Check
+  - Rule 6: Handoff Completeness
+  - Rule 7: No Scatter
+  - Rule 8: Amendment Protocol
+- `obsidian/Horizon ABA - Mandatory Rules.md` — vault-ready note
+- `graphify/horizon_nodes.json` — added `mandatory-rules` node + relationships
+- `notebooklm/horizon_source.md` — Mandatory Rules section added
+
+### Enforcement Hook
+- Counselor refuses determinations without complete Data Dictionary
+- AI assistants must include `Obsidian: ✅ synced` or `⛔ BLOCKED — [reason]` in every session handoff
+- Every session ends with the handoff checklist (Rule 6)
+
+### Files Changed
+- `docs/horizon-aba/MANDATORY_RULES.md` — created
+- `docs/horizon-aba/obsidian/Horizon ABA - Mandatory Rules.md` — created
+- `docs/horizon-aba/graphify/horizon_nodes.json` — updated
+- `docs/horizon-aba/notebooklm/horizon_source.md` — updated
+
+### Handoff Status (per Rule 6)
+- Obsidian: ⛔ BLOCKED — sandbox has no vault access (Rule 2 satisfied by explicit blocker per Rule 3)
+- Graphify: ⛔ BLOCKED — sandbox has no API access (Rule 3 blocker logged)
+- NotebookLM: ⛔ BLOCKED — sandbox has no API access (Rule 3 blocker logged)
+- Verification evidence: All files written and pushed
+- Remaining gaps: Founder + Counselor signatures on MANDATORY_RULES.md and COUNSELOR_AUTHORITY_DOCTRINE.md
+- Next milestone: Founder signs the two doctrines + designates Counselor by name
+
+---
+
 ## Session 6 — 2026-06-01
 
 **Goal:** Elevate Counselor to supreme internal legal authority — attorney-equivalent powers within Horizon  

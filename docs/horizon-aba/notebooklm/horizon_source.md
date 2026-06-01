@@ -50,6 +50,20 @@ required for regulator-facing opinions. Founder accepts this risk per Article VI
 
 Full doctrine: `docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md`
 
+### Mandatory Rules (8 binding rules)
+Per `docs/horizon-aba/MANDATORY_RULES.md`:
+- **Rule 1 — Data Dictionary:** No legal review without a complete data dictionary
+- **Rule 2 — Obsidian Sync:** Every session ends with Obsidian synced or blocker documented
+- **Rule 3 — Blocker Documentation:** Every blocker explicit, no silent skips
+- **Rule 4 — Memory Order:** Vault → Obsidian → Graphify → NotebookLM → handoffs → task
+- **Rule 5 — Context-First:** Check for existing artifacts before creating new ones
+- **Rule 6 — Handoff Completeness:** Session not done until handoff checklist is complete
+- **Rule 7 — No Scatter:** One system, one source of truth
+- **Rule 8 — Amendment Protocol:** Founder + Counselor joint signature only
+
+These rules bind all Horizon entities, all sessions, and all AI assistants
+(Claude, ChatGPT) on Horizon work.
+
 ### Legal findings
 - **ROSCA** (15 U.S.C. § 8403): Federal law, active. Requires clear disclosure of recurring billing terms before purchase and simple cancellation.
 - **CA AB 2863**: Strongest state auto-renewal law. Requires affirmative consent checkbox (not pre-checked) for trial-to-paid conversion for California subscribers.
