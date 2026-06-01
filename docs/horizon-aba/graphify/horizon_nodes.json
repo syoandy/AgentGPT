@@ -82,10 +82,48 @@
     {
       "id": "horizon-counselor",
       "type": "authority",
-      "label": "Horizon Counselor",
-      "role": "Legal approval authority under Horizon Legal Fortress",
-      "scope": "HIPAA scope, subscription law, app store law, COPPA, state privacy",
-      "escalation": "External counsel only if Counselor escalates"
+      "label": "Horizon Counselor — Supreme Legal Authority",
+      "role": "General Counsel equivalent; supreme internal legal authority across all Horizon entities",
+      "reports_to": "Founder only",
+      "powers": [
+        "Approve / reject / condition all legal artifacts",
+        "Veto launches, contracts (sub-threshold), vendor onboarding",
+        "Sign BAAs / DPAs",
+        "Direct engineering for legal controls",
+        "Authorize breach notifications",
+        "Interpret Horizon doctrine across empire",
+        "Emergency take-down authority",
+        "Engage external counsel as needed"
+      ],
+      "founder_threshold_requires_cosign": [
+        "Contracts > $50k total",
+        "Acquisitions / mergers",
+        "Litigation initiation",
+        "Settlement > $10k",
+        "Debt > $25k",
+        "Doctrine amendments"
+      ],
+      "mandatory_external_escalation": [
+        "Litigation",
+        "Government investigations",
+        "Subpoenas",
+        "Securities",
+        "Patents",
+        "Trademark disputes",
+        "GDPR cross-border",
+        "Criminal exposure"
+      ],
+      "bar_admitted": "TBD — see Article VI Section 6.4",
+      "doctrine_source": "docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md"
+    },
+    {
+      "id": "counselor-doctrine",
+      "type": "doctrine",
+      "label": "Counselor Authority Doctrine",
+      "articles": 11,
+      "binding_on": "Founder, all Horizon employees, all AI assistants on Horizon work",
+      "amendment": "Founder + Counselor joint signature",
+      "file": "docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md"
     },
     {
       "id": "stripe-baa",
@@ -120,6 +158,8 @@
     { "from": "compliance-audit", "to": "dispute-dashboard", "type": "requires-service" },
     { "from": "compliance-audit", "to": "hipaa-review", "type": "blocked-by" },
     { "from": "hipaa-review", "to": "horizon-counselor", "type": "approved-by" },
+    { "from": "horizon-counselor", "to": "counselor-doctrine", "type": "governed-by" },
+    { "from": "horizon-counselor", "to": "horizon-aba", "type": "has-authority-over" },
     { "from": "hipaa-review", "to": "stripe-baa", "type": "requires" },
     { "from": "hipaa-review", "to": "email-baa", "type": "requires" },
     { "from": "subscription-disclosure", "to": "horizon-repo", "type": "blocked-by" },

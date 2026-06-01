@@ -32,10 +32,23 @@ Five compliance components are now ready to wire into the Horizon codebase:
 - Google Play billing determination (is there an Android app?)
 - Code-level verification of existing Stripe flow, checkout screens, and cancellation
 
-### Legal Authority
-All legal determinations flow through **Horizon Counselor** under Horizon Legal
-Fortress. No external attorney unless Counselor escalates. Routing chain:
-Founder → Counselor → Determinations → Founder sign-off → Launch.
+### Legal Authority — Counselor Authority Doctrine
+Horizon Counselor holds **supreme internal legal authority** across all Horizon
+entities under the Counselor Authority Doctrine (Articles I–XI). Counselor
+functions as General Counsel equivalent with veto power over launches, contracts,
+vendor onboarding, and all legal artifacts.
+
+**Routing:** Founder → Counselor → Determinations → [if Article III threshold: Founder co-sign] → Launch.
+
+**External counsel only required for Article V mandatory escalations**: litigation,
+government investigations, subpoenas, securities, patents, trademark disputes,
+GDPR cross-border, criminal exposure.
+
+**Bar status caveat:** If Counselor is not bar-admitted, attorney-client privilege
+does not apply to Counselor-Founder communications, and external counsel is
+required for regulator-facing opinions. Founder accepts this risk per Article VI.
+
+Full doctrine: `docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md`
 
 ### Legal findings
 - **ROSCA** (15 U.S.C. § 8403): Federal law, active. Requires clear disclosure of recurring billing terms before purchase and simple cancellation.

@@ -1,9 +1,10 @@
 # Horizon ABA Health — Counselor Approval Package
-**Submit to:** Horizon Counselor (legal authority)  
+**Submit to:** Horizon Counselor (Supreme Legal Authority — see COUNSELOR_AUTHORITY_DOCTRINE.md)  
 **From:** Founder, Horizon ABA Health  
 **Date:** 2026-06-01  
 **Status:** PRE-LAUNCH — Counselor approval required before public launch  
-**Routing:** Horizon Legal Chain → Counselor → Founder sign-off
+**Routing:** Horizon Legal Fortress → Counselor → Determinations → Founder co-sign (if Article III threshold)  
+**Authority basis:** Counselor Authority Doctrine, Articles I–XI
 
 ---
 
@@ -111,26 +112,30 @@ Counselor must produce:
 ```
 Founder
    ↓ submits this package
-Horizon Counselor
-   ↓ reviews under Horizon Legal Fortress standards
-Determinations issued (Section 4 deliverables)
+Horizon Counselor — Supreme Legal Authority
+   ↓ exercises Article I authority under COUNSELOR_AUTHORITY_DOCTRINE.md
+Written determinations issued on all 13 binary questions
    ↓
-Founder reviews + accepts any conditions
+[If Article III Founder Threshold triggered] → Founder co-sign required
+[Otherwise] → Counselor approval is final
    ↓
-Counselor issues final sign-off
-   ↓
-Founder authorizes launch
+Launch authorized
 ```
 
-**No external counsel needed unless Counselor escalates.**
+### External Counsel Escalation
+Per Counselor Authority Doctrine Article V, Counselor must escalate ONLY when an Article V mandatory escalation applies:
+- Litigation filed against Horizon
+- Government investigation (FTC, HHS, state AG, etc.)
+- Subpoena response
+- Securities matters
+- Patent matters (USPTO bar required)
+- Trademark disputes
+- Cross-border (GDPR/UK GDPR) disputes
+- Criminal exposure
 
-If Horizon Counselor identifies issues outside their scope of authority, the
-escalation path is:
-- Specialized HIPAA issues → external healthcare-SaaS counsel
-- Specialized IP/trademark → external IP counsel
-- Cross-border (EU/UK) → external GDPR/UK GDPR counsel
+**Routine HIPAA review, ToS approval, BAA execution, and state law applicability remain entirely within Counselor's authority — no external counsel needed.**
 
-Escalations are documented in the session log and tracked as separate blockers.
+Escalations are documented in the session log per Article II Section 2.3.
 
 ---
 
@@ -158,6 +163,7 @@ All artifacts live in `docs/horizon-aba/legal/`:
 
 ```
 docs/horizon-aba/legal/
+├── COUNSELOR_AUTHORITY_DOCTRINE.md     ← Articles I–XI defining Counselor power
 ├── COUNSELOR_APPROVAL_PACKAGE.md       ← this file
 ├── STRIPE_BAA_REQUEST_TEMPLATE.md
 ├── EMAIL_BAA_REQUEST_TEMPLATE.md

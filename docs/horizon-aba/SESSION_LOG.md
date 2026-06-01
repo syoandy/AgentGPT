@@ -5,6 +5,49 @@
 
 ---
 
+## Session 6 — 2026-06-01
+
+**Goal:** Elevate Counselor to supreme internal legal authority — attorney-equivalent powers within Horizon  
+**Outcome:** COUNSELOR_AUTHORITY_DOCTRINE.md created (Articles I–XI); all systems updated
+
+### Work Completed
+- `legal/COUNSELOR_AUTHORITY_DOCTRINE.md` — 11-article doctrine granting Counselor supreme internal authority
+- Approval package updated to reference Doctrine
+- Obsidian: `Horizon Counselor - Authority Doctrine.md` created
+- Graphify: `horizon-counselor` and `counselor-doctrine` nodes added with full powers list
+- NotebookLM: Counselor Authority section added with bar-status caveat
+
+### Key Doctrine Articles
+- **Article I** — Counselor has final authority over compliance, contracts (sub-threshold), privacy, HIPAA scope, state law, internal policy, risk acceptance, vendor BAAs, breach response
+- **Article III** — Founder co-sign required for: contracts > $50k, acquisitions, litigation, settlement > $10k, debt > $25k, doctrine changes
+- **Article IV** — Founder override available; Counselor has standing emergency authority for breaches
+- **Article V** — Mandatory external counsel escalations: litigation, government investigations, subpoenas, securities, patents, GDPR, criminal
+- **Article VI** — Honest bar-status disclosure: doctrine grants internal authority but NOT bar license; if Counselor is not bar-admitted, external counsel needed for regulator-facing opinions
+- **Article IX** — Doctrine binds all employees, contractors, and AI assistants (Claude, ChatGPT) on Horizon work
+
+### Honest Caveat (Article VI)
+Document elevation creates internal authority. It does NOT create:
+- Bar admission
+- Attorney-client privilege (unless Counselor is actually bar-admitted)
+- Legally binding compliance opinions in regulator eyes
+
+Doctrine is explicit about this so Founder's risk acceptance is informed.
+
+### Files Changed
+- `docs/horizon-aba/legal/COUNSELOR_AUTHORITY_DOCTRINE.md` — created
+- `docs/horizon-aba/legal/COUNSELOR_APPROVAL_PACKAGE.md` — updated to reference Doctrine
+- `docs/horizon-aba/obsidian/Horizon Counselor - Authority Doctrine.md` — created
+- `docs/horizon-aba/graphify/horizon_nodes.json` — Counselor + Doctrine nodes
+- `docs/horizon-aba/notebooklm/horizon_source.md` — Counselor Authority section
+
+### Next Milestone
+- Founder + Counselor signatures on Article X
+- Counselor name + bar status filled in Article VI Section 6.4
+- Founder fills HIPAA Data Dictionary
+- Submit COUNSELOR_APPROVAL_PACKAGE to Counselor
+
+---
+
 ## Session 5 — 2026-06-01
 
 **Goal:** Reroute legal pack from external attorney → Horizon Counselor approval flow  
