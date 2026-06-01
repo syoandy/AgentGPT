@@ -5,6 +5,41 @@
 
 ---
 
+## Session 3 — 2026-06-01
+
+**Goal:** Make Obsidian/Graphify/NLM access actionable — not silently blocked  
+**Outcome:** All 3 systems now have pre-built drop-in files. Sync guide created.
+
+### Work Completed
+- `EXTERNAL_SYSTEMS_SYNC.md` — sync guide with step-by-step for each system
+- `obsidian/Horizon ABA - Compliance Audit.md` — drop into vault at `/Horizon ABA/`
+- `obsidian/Horizon ABA - Session Log.md` — drop into vault at `/Horizon ABA/`
+- `obsidian/Horizon ABA - HIPAA Requirements.md` — drop into vault at `/Horizon ABA/`
+- `graphify/horizon_nodes.json` — import into Graphify (merge, not replace)
+- `notebooklm/horizon_source.md` — upload to Horizon NotebookLM project as source
+
+### External System Status
+| System | Status | Resolution |
+|---|---|---|
+| Obsidian | ⛔ No sandbox API — files pre-built | Drop `obsidian/*.md` into your vault OR install Obsidian Git plugin pointed at this repo |
+| Graphify | ⛔ No API — JSON pre-built | Import `graphify/horizon_nodes.json` into Graphify |
+| NotebookLM | ⛔ No API — source pre-built | Upload `notebooklm/horizon_source.md` as a source in your NLM project |
+
+### Files Changed
+- `docs/horizon-aba/EXTERNAL_SYSTEMS_SYNC.md` — created
+- `docs/horizon-aba/obsidian/Horizon ABA - Compliance Audit.md` — created
+- `docs/horizon-aba/obsidian/Horizon ABA - Session Log.md` — created
+- `docs/horizon-aba/obsidian/Horizon ABA - HIPAA Requirements.md` — created
+- `docs/horizon-aba/graphify/horizon_nodes.json` — created
+- `docs/horizon-aba/notebooklm/horizon_source.md` — created
+
+### Next Milestone
+- You manually sync the 3 systems using the files above (5 mins)
+- Wire components into `syoandy/horizon-ab-health`
+- HIPAA legal review
+
+---
+
 ## Session 2 — 2026-06-01
 
 **Goal:** Build all missing compliance components  

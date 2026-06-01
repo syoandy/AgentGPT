@@ -1,0 +1,121 @@
+{
+  "project": "Horizon ABA Health",
+  "updated": "2026-06-01",
+  "branch": "claude/create-feep-IU72S",
+  "nodes": [
+    {
+      "id": "horizon-aba",
+      "type": "project",
+      "label": "Horizon ABA Health App",
+      "status": "in-progress",
+      "priority": "P0",
+      "tags": ["health", "aba-therapy", "saas", "subscription"]
+    },
+    {
+      "id": "compliance-audit",
+      "type": "audit",
+      "label": "Subscription & Billing Compliance Audit",
+      "status": "75% complete",
+      "file": "docs/horizon-aba/SUBSCRIPTION_COMPLIANCE_AUDIT.md",
+      "tags": ["compliance", "billing", "rosca", "ftc"]
+    },
+    {
+      "id": "subscription-disclosure",
+      "type": "component",
+      "label": "SubscriptionDisclosure.tsx",
+      "status": "built — needs wiring",
+      "file": "docs/horizon-aba/components/SubscriptionDisclosure.tsx",
+      "legal_basis": ["ROSCA", "CA AB 2863", "NY GBL 527-a"]
+    },
+    {
+      "id": "trial-reminder",
+      "type": "service",
+      "label": "Trial Reminder Service",
+      "status": "built — needs wiring",
+      "file": "docs/horizon-aba/services/trial_reminder.go",
+      "triggers": ["T-7", "T-3", "T-1", "T-0"]
+    },
+    {
+      "id": "stripe-webhooks",
+      "type": "service",
+      "label": "Stripe Webhook Handler",
+      "status": "built — needs wiring",
+      "file": "docs/horizon-aba/webhooks/stripe_webhooks.go",
+      "events": [
+        "subscription.created",
+        "subscription.updated",
+        "subscription.deleted",
+        "subscription.trial_will_end",
+        "invoice.payment_succeeded",
+        "invoice.payment_failed",
+        "charge.dispute.created"
+      ]
+    },
+    {
+      "id": "cancellation-flow",
+      "type": "component",
+      "label": "CancellationFlow.tsx",
+      "status": "built — needs wiring",
+      "file": "docs/horizon-aba/components/CancellationFlow.tsx",
+      "compliance": ["CA AB 2863 — online cancel required", "no dark patterns"]
+    },
+    {
+      "id": "dispute-dashboard",
+      "type": "service",
+      "label": "Dispute Monitoring Dashboard",
+      "status": "built — needs wiring",
+      "file": "docs/horizon-aba/dashboard/dispute_dashboard.go",
+      "thresholds": {
+        "visa_vdmp": "0.65%",
+        "mastercard_ecp": "1.0%"
+      }
+    },
+    {
+      "id": "hipaa-review",
+      "type": "legal",
+      "label": "HIPAA Legal Review",
+      "status": "NOT STARTED — P0 blocks launch",
+      "priority": "P0",
+      "file": "docs/horizon-aba/obsidian/Horizon ABA - HIPAA Requirements.md"
+    },
+    {
+      "id": "stripe-baa",
+      "type": "legal",
+      "label": "Stripe Healthcare BAA",
+      "status": "NOT SIGNED — required before first paid user",
+      "priority": "P0",
+      "depends_on": "hipaa-review"
+    },
+    {
+      "id": "email-baa",
+      "type": "legal",
+      "label": "Email Provider BAA",
+      "status": "NOT SIGNED — required before sending user emails",
+      "priority": "P0",
+      "depends_on": "hipaa-review"
+    },
+    {
+      "id": "horizon-repo",
+      "type": "blocker",
+      "label": "horizon-ab-health repo access",
+      "status": "BLOCKED — session scoped to syoandy/agentgpt only",
+      "resolution": "Re-scope session or open new session in horizon-ab-health"
+    }
+  ],
+  "relationships": [
+    { "from": "horizon-aba", "to": "compliance-audit", "type": "has-audit" },
+    { "from": "compliance-audit", "to": "subscription-disclosure", "type": "requires-component" },
+    { "from": "compliance-audit", "to": "trial-reminder", "type": "requires-service" },
+    { "from": "compliance-audit", "to": "stripe-webhooks", "type": "requires-service" },
+    { "from": "compliance-audit", "to": "cancellation-flow", "type": "requires-component" },
+    { "from": "compliance-audit", "to": "dispute-dashboard", "type": "requires-service" },
+    { "from": "compliance-audit", "to": "hipaa-review", "type": "blocked-by" },
+    { "from": "hipaa-review", "to": "stripe-baa", "type": "requires" },
+    { "from": "hipaa-review", "to": "email-baa", "type": "requires" },
+    { "from": "subscription-disclosure", "to": "horizon-repo", "type": "blocked-by" },
+    { "from": "trial-reminder", "to": "horizon-repo", "type": "blocked-by" },
+    { "from": "stripe-webhooks", "to": "horizon-repo", "type": "blocked-by" },
+    { "from": "cancellation-flow", "to": "horizon-repo", "type": "blocked-by" },
+    { "from": "dispute-dashboard", "to": "horizon-repo", "type": "blocked-by" }
+  ]
+}
