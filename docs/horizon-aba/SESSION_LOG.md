@@ -5,6 +5,35 @@
 
 ---
 
+## Session 8 — 2026-06-01
+
+**Goal:** Unblock Obsidian sync per Rule 2  
+**Outcome:** ✅ Obsidian Git plugin installed, HorizonVault cloned, auto-pull active
+
+### Work Completed
+- `setup-horizon-vault.bat` executed by Founder on Windows machine
+- HorizonVault created at `C:\Users\Mango\Documents\HorizonVault`
+- Repo cloned, branch `claude/create-feep-IU72S` checked out
+- Obsidian Git plugin installed and configured (auto-pull every 30 min)
+
+### Rule Compliance
+- Rule 2 (Obsidian Sync): ✅ UNBLOCKED — sync is now automatic
+- Rule 3 (Blocker Docs): ✅ Prior blocker now resolved and dated
+- All future sessions: Obsidian status flips from BLOCKED → SYNCED
+
+### Files Changed
+- `docs/horizon-aba/SESSION_LOG.md` — this entry
+
+### Handoff Status (per Rule 6)
+- Obsidian: ✅ SYNCED (auto-pull active)
+- Graphify: ⛔ BLOCKED — still no API access (Rule 3 logged)
+- NotebookLM: ⛔ BLOCKED — still no API access (Rule 3 logged)
+- Verification: Founder confirmed setup complete
+- Remaining gaps: Graphify + NotebookLM still manual; Data Dictionary unfilled; doctrines unsigned
+- Next milestone: Pick one of the open work items (see below)
+
+---
+
 ## Session 7 — 2026-06-01
 
 **Goal:** Convert "fill data dictionary" + "sync to Obsidian" into binding rules  
