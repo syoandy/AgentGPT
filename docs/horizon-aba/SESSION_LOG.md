@@ -5,6 +5,41 @@
 
 ---
 
+## Session 9 — 2026-06-01
+
+**Goal:** Address Item #6 — wire components into horizon-ab-health  
+**Outcome:** ⛔ BLOCKED in this session (proxy denies horizon-ab-health) — built bulletproof wiring kit for new session instead
+
+### Blocker Detail (per Rule 3)
+- Blocker:     Cannot wire components into horizon-ab-health from this session
+- System:      GitHub proxy
+- Status:      BLOCKED — verified by re-test (502 / "repository not authorized")
+- Reason:      This session scoped to syoandy/agentgpt only
+- Resolution:  New Claude Code session pointed at syoandy/horizon-ab-health
+- Owner:       Founder (open the new session)
+
+### Work Completed (to prep the new session for one-shot completion)
+- `wiring-kit/NEW_SESSION_PROMPT.md` — exact prompt to paste into new session
+- `wiring-kit/INTEGRATION_GUIDE.md` — step-by-step runbook for all 5 components
+- `wiring-kit/db_migration.sql` — SQL for trials/disputes/webhook idempotency/cancellation log tables
+- `wiring-kit/checklist.md` — completion checklist (Founder uses to verify new session finished the job)
+
+### Files Changed
+- `docs/horizon-aba/wiring-kit/NEW_SESSION_PROMPT.md` — created
+- `docs/horizon-aba/wiring-kit/INTEGRATION_GUIDE.md` — created
+- `docs/horizon-aba/wiring-kit/db_migration.sql` — created
+- `docs/horizon-aba/wiring-kit/checklist.md` — created
+
+### Handoff Status (Rule 6)
+- Obsidian: ✅ SYNCED (auto-pull active from Session 8)
+- Graphify: ⛔ BLOCKED — sandbox has no API access
+- NotebookLM: ⛔ BLOCKED — sandbox has no API access
+- Verification: All wiring-kit files pushed to claude/create-feep-IU72S
+- Remaining gaps: Item #6 still requires Founder to open new session in horizon-ab-health
+- Next milestone: Founder opens new Claude session pointed at syoandy/horizon-ab-health and pastes the NEW_SESSION_PROMPT.md content
+
+---
+
 ## Session 8 — 2026-06-01
 
 **Goal:** Unblock Obsidian sync per Rule 2  
