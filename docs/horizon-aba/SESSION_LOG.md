@@ -5,36 +5,54 @@
 
 ---
 
-## Session 4 — 2026-06-01
+## Session 5 — 2026-06-01
 
-**Goal:** Build attorney-ready legal pack so HIPAA review doesn't drag on  
-**Outcome:** Full legal briefing packet created — ready to email counsel
+**Goal:** Reroute legal pack from external attorney → Horizon Counselor approval flow  
+**Outcome:** Legal pack reframed as Counselor Approval Package; all artifacts updated
 
 ### Work Completed
-- `legal/ATTORNEY_BRIEFING_PACKET.md` — cover letter + 13 specific binary questions for counsel
-- `legal/STRIPE_BAA_REQUEST_TEMPLATE.md` — email template for Stripe healthcare BAA
-- `legal/EMAIL_BAA_REQUEST_TEMPLATE.md` — provider matrix + email template
-- `legal/TOS_SUBSCRIPTION_LANGUAGE.md` — ROSCA/CA AB 2863/NY GBL §527-a clauses
-- `legal/PRIVACY_POLICY_HEALTH_DATA.md` — HIPAA Privacy Policy section template
-- `legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md` — data dictionary for counsel's PHI determination
+- `legal/COUNSELOR_APPROVAL_PACKAGE.md` — created (replaces ATTORNEY_BRIEFING_PACKET.md)
+- `legal/ATTORNEY_BRIEFING_PACKET.md` — deleted (external-attorney framing removed)
+- Updated all references to "attorney" → "Horizon Counselor" across:
+  - `HIPAA_DATA_DICTIONARY_TEMPLATE.md`
+  - `TOS_SUBSCRIPTION_LANGUAGE.md`
+  - `PRIVACY_POLICY_HEALTH_DATA.md`
+  - `STRIPE_BAA_REQUEST_TEMPLATE.md`
 
 ### Why This Matters
-Attorney reviews go from "$10k open-ended" to "$1.5k–$5k fixed-fee" when you hand
-counsel a focused scope. This pack gives them exactly that.
+Legal approval now flows through Horizon's own counselor under the Horizon Legal
+Fortress structure — no external attorney engagement unless Counselor escalates.
+Routing chain: Founder → Counselor → Determinations → Founder sign-off.
 
 ### Files Changed
-- `docs/horizon-aba/legal/ATTORNEY_BRIEFING_PACKET.md` — created
-- `docs/horizon-aba/legal/STRIPE_BAA_REQUEST_TEMPLATE.md` — created
-- `docs/horizon-aba/legal/EMAIL_BAA_REQUEST_TEMPLATE.md` — created
-- `docs/horizon-aba/legal/TOS_SUBSCRIPTION_LANGUAGE.md` — created
-- `docs/horizon-aba/legal/PRIVACY_POLICY_HEALTH_DATA.md` — created
-- `docs/horizon-aba/legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md` — created
+- `docs/horizon-aba/legal/COUNSELOR_APPROVAL_PACKAGE.md` — created
+- `docs/horizon-aba/legal/ATTORNEY_BRIEFING_PACKET.md` — deleted
+- `docs/horizon-aba/legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md` — updated
+- `docs/horizon-aba/legal/TOS_SUBSCRIPTION_LANGUAGE.md` — updated
+- `docs/horizon-aba/legal/PRIVACY_POLICY_HEALTH_DATA.md` — updated
+- `docs/horizon-aba/legal/STRIPE_BAA_REQUEST_TEMPLATE.md` — updated
 
 ### Next Milestone
 - Founder fills in `HIPAA_DATA_DICTIONARY_TEMPLATE.md` with actual Horizon data fields
-- Founder finds healthcare-SaaS attorney
-- Founder sends `ATTORNEY_BRIEFING_PACKET.md` + the data dictionary
+- Founder submits `COUNSELOR_APPROVAL_PACKAGE.md` + 5 artifacts to Horizon Counselor
+- Counselor issues written determinations on the 13 Section 2 questions
 - Parallel: wire components into `syoandy/horizon-ab-health` (new session)
+
+---
+
+## Session 4 — 2026-06-01
+
+**Goal:** Build attorney-ready legal pack so HIPAA review doesn't drag on  
+**Outcome:** Full legal briefing packet created — superseded in Session 5 by Counselor flow
+
+### Work Completed (Superseded)
+- Initial briefing packet created as ATTORNEY_BRIEFING_PACKET.md — replaced in Session 5
+- 5 supporting artifacts created and retained:
+  - `legal/STRIPE_BAA_REQUEST_TEMPLATE.md`
+  - `legal/EMAIL_BAA_REQUEST_TEMPLATE.md`
+  - `legal/TOS_SUBSCRIPTION_LANGUAGE.md`
+  - `legal/PRIVACY_POLICY_HEALTH_DATA.md`
+  - `legal/HIPAA_DATA_DICTIONARY_TEMPLATE.md`
 
 ---
 

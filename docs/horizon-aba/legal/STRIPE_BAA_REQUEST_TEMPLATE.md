@@ -67,7 +67,7 @@ Stripe will:
 
 ## Things To Verify In The BAA
 
-When you receive Stripe's BAA, your attorney should confirm:
+When you receive Stripe's BAA, Horizon Counselor must confirm:
 
 - [ ] Stripe is named as Business Associate
 - [ ] All Stripe products you use are listed (Billing, Connect, Tax, etc.)

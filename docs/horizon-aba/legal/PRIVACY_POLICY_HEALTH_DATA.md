@@ -7,9 +7,9 @@
 ## How To Use
 
 These clauses cover the HIPAA + state privacy law floor for a healthcare SaaS.
-Your attorney needs to:
+Horizon Counselor must:
 1. Confirm Horizon is/isn't a Covered Entity or Business Associate
-2. Integrate these clauses into your full Privacy Policy
+2. Integrate these clauses into the full Privacy Policy
 3. Add CCPA/CPRA, GDPR (if EU users), and state-specific clauses
 
 ---
@@ -213,9 +213,9 @@ HIPAA Privacy Officer: [NAME] — [EMAIL]
 
 ---
 
-## Counsel Review Checklist
+## Horizon Counselor Approval Checklist
 
-- [ ] PHI handling clauses match counsel's HIPAA determination
+- [ ] PHI handling clauses match Horizon Counselor's HIPAA determination
 - [ ] BAA list reflects actually signed agreements (not aspirational)
 - [ ] Breach notification timeline matches state law (some states require shorter)
 - [ ] CCPA/CPRA section reviewed against current regulations

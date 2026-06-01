@@ -1,8 +1,9 @@
 ---
-tags: [horizon-aba, hipaa, legal, compliance, P0]
+tags: [horizon-aba, hipaa, legal, compliance, P0, counselor-approval-required]
 created: 2026-06-01
-status: LEGAL REVIEW REQUIRED
+status: COUNSELOR APPROVAL REQUIRED
 priority: P0 — blocks launch
+routing: Founder → Horizon Counselor → Approval
 ---
 
 # Horizon ABA — HIPAA Requirements
@@ -17,7 +18,7 @@ ABA therapy involves Protected Health Information (PHI) under HIPAA:
 
 **Even if Horizon does not store clinical notes**, intake and scheduling data likely constitutes PHI.
 
-> ⚠️ LEGAL REVIEW REQUIRED — Qualified healthcare counsel must determine PHI scope before launch.
+> ⚠️ COUNSELOR APPROVAL REQUIRED — Horizon Counselor must determine PHI scope before launch under Horizon Legal Fortress.
 
 ## Required Actions (All P0)
 
@@ -39,7 +40,21 @@ ABA therapy involves Protected Health Information (PHI) under HIPAA:
 
 ### 4. COPPA
 - If any Horizon clients are minors (common in ABA therapy), COPPA applies
-- **Action:** Legal review of data collection from or about minors
+- **Action:** Submit to Horizon Counselor for review of data collection from or about minors
+
+## Routing Chain
+```
+Founder
+  ↓ submits COUNSELOR_APPROVAL_PACKAGE.md + 5 artifacts
+Horizon Counselor
+  ↓ reviews under Horizon Legal Fortress
+Written determinations on 13 binary questions
+  ↓
+Founder signs off / accepts conditions
+  ↓
+Launch authorized
+```
+No external attorney unless Counselor escalates.
 
 ## Breach Notification Rule
 If PHI is exposed:

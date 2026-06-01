@@ -1,6 +1,6 @@
 # HIPAA Data Dictionary Template — Founder Fills In
 **Use:** Counsel needs this to determine if Horizon handles PHI  
-**Action required:** Founder fills in before sending to attorney
+**Action required:** Founder fills in before submitting to Horizon Counselor
 
 ---
 
@@ -10,7 +10,7 @@ For every data field Horizon collects, fill in the table below.
 Be honest — if you don't know, mark "UNKNOWN" so counsel can investigate.
 
 This is the single most important document for the HIPAA review.
-Without it, your attorney is guessing.
+Without it, Horizon Counselor is guessing.
 
 ---
 
@@ -81,7 +81,7 @@ Without it, your attorney is guessing.
 
 ---
 
-## Why Counsel Needs This
+## Why Horizon Counselor Needs This
 
 This table determines:
 - Whether Horizon is a **Covered Entity** under HIPAA (probably no, but counsel decides)
@@ -92,7 +92,7 @@ This table determines:
 - Whether **BIPA** applies (depends on biometric data)
 - Whether **state-specific** health privacy laws apply (depends on user geography)
 
-Without this table, your attorney is operating on assumptions. Bad assumptions = bad legal advice.
+Without this table, Horizon Counselor is operating on assumptions. Bad assumptions = bad legal determinations.
 
 ---
 

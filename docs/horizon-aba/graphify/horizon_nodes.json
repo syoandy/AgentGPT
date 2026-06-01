@@ -73,10 +73,19 @@
     {
       "id": "hipaa-review",
       "type": "legal",
-      "label": "HIPAA Legal Review",
+      "label": "HIPAA Counselor Approval",
       "status": "NOT STARTED — P0 blocks launch",
       "priority": "P0",
-      "file": "docs/horizon-aba/obsidian/Horizon ABA - HIPAA Requirements.md"
+      "routing": "Founder → Horizon Counselor → Approval",
+      "file": "docs/horizon-aba/legal/COUNSELOR_APPROVAL_PACKAGE.md"
+    },
+    {
+      "id": "horizon-counselor",
+      "type": "authority",
+      "label": "Horizon Counselor",
+      "role": "Legal approval authority under Horizon Legal Fortress",
+      "scope": "HIPAA scope, subscription law, app store law, COPPA, state privacy",
+      "escalation": "External counsel only if Counselor escalates"
     },
     {
       "id": "stripe-baa",
@@ -110,6 +119,7 @@
     { "from": "compliance-audit", "to": "cancellation-flow", "type": "requires-component" },
     { "from": "compliance-audit", "to": "dispute-dashboard", "type": "requires-service" },
     { "from": "compliance-audit", "to": "hipaa-review", "type": "blocked-by" },
+    { "from": "hipaa-review", "to": "horizon-counselor", "type": "approved-by" },
     { "from": "hipaa-review", "to": "stripe-baa", "type": "requires" },
     { "from": "hipaa-review", "to": "email-baa", "type": "requires" },
     { "from": "subscription-disclosure", "to": "horizon-repo", "type": "blocked-by" },

@@ -25,12 +25,17 @@ Five compliance components are now ready to wire into the Horizon codebase:
 
 ### What still needs to happen
 - Wire all 5 components into the actual `horizon-ab-health` codebase
-- HIPAA legal review (P0 — blocks launch)
+- Submit `COUNSELOR_APPROVAL_PACKAGE.md` to Horizon Counselor (P0 — blocks launch)
 - Execute Stripe Healthcare BAA (no standard Stripe account covers this)
 - Execute Email Provider BAA (required before any user emails are sent)
 - Apple IAP determination (is there an iOS app? does it sell subscriptions?)
 - Google Play billing determination (is there an Android app?)
 - Code-level verification of existing Stripe flow, checkout screens, and cancellation
+
+### Legal Authority
+All legal determinations flow through **Horizon Counselor** under Horizon Legal
+Fortress. No external attorney unless Counselor escalates. Routing chain:
+Founder → Counselor → Determinations → Founder sign-off → Launch.
 
 ### Legal findings
 - **ROSCA** (15 U.S.C. § 8403): Federal law, active. Requires clear disclosure of recurring billing terms before purchase and simple cancellation.
@@ -82,9 +87,11 @@ docs/horizon-aba/
 
 ---
 
-## Open Questions for Legal Counsel
+## Open Questions for Horizon Counselor
 1. Does Horizon's specific data model constitute PHI under HIPAA?
 2. What is the current federal standard for cancellation ease post-FTC rule vacatur?
 3. Does Horizon's iOS app (if any) qualify for any DMA external payment exemption?
 4. Do any Horizon clients involve minors — triggering COPPA?
 5. Which states beyond CA and NY have active auto-renewal enforcement priority?
+
+Full 13-question list in `docs/horizon-aba/legal/COUNSELOR_APPROVAL_PACKAGE.md` Section 2.

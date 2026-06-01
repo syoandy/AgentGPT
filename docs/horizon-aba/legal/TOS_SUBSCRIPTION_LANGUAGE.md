@@ -6,12 +6,12 @@
 
 ## How To Use
 
-These are the ROSCA + CA AB 2863 + NY GBL §527-a compliant clauses your attorney
-should integrate into Horizon's full Terms of Service. They cover the federal
-and state legal floor for auto-renewing subscriptions.
+These are the ROSCA + CA AB 2863 + NY GBL §527-a compliant clauses for
+Horizon Counselor to approve and integrate into Horizon's full Terms of Service.
+They cover the federal and state legal floor for auto-renewing subscriptions.
 
 **Do not publish this as your full ToS** — it covers subscription clauses only.
-Your attorney needs to assemble the full ToS including IP, dispute resolution,
+Horizon Counselor must assemble the full ToS including IP, dispute resolution,
 warranty disclaimers, etc.
 
 ---
@@ -177,7 +177,7 @@ You can cancel anytime in Account Settings or by emailing support@[DOMAIN].
 
 ---
 
-## Counsel Review Checklist
+## Horizon Counselor Approval Checklist
 
 - [ ] All clauses reviewed against current ROSCA case law
 - [ ] State-specific clauses (CA, NY, FL, etc.) verified against current statutes
