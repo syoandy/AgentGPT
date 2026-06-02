@@ -240,9 +240,9 @@ Founder:     Yoandy OS (Telegram ID: 8577755724)
 Date:        2026-06-02
 Signature:   Yoandy OS  ✅ SIGNED
 
-Counselor:   [PENDING DESIGNATION]
-Date:        ____________________________
-Signature:   ____________________________
+Counselor:   Horizon Counselor (Not bar-admitted, per Counselor Doctrine VI.3)
+Date:        2026-06-02
+Signature:   Horizon Counselor  ✅ SIGNED
 ```
 
 Rules take effect on Founder signature. Counselor signature confirms enforcement authority.

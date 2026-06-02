@@ -18,11 +18,26 @@
 ## Assigned Tier
 
 ```
-Tier:           [S / A / B / C]
-Assigned by:    Counselor (signature required)
-Date:           __
-Rationale:      __
+Tier:           PROVISIONAL — Tier B (minimum default for any consumer-facing app with PII)
+Assigned by:    Horizon Counselor (provisional, per Founder confirmation 2026-06-02)
+Date:           2026-06-02
+Rationale:      Founder confirmed pool app with no Horizon relation. Without more
+                data details, default to Tier B (consumer SaaS handling PII).
+                Tier will be re-assessed once Founder provides:
+                - What data is collected
+                - Whether minors use the app (would force Tier S via COPPA)
+                - Whether any health-adjacent data is collected (would force Tier S)
+                - Whether payments are processed (forces at least Tier A)
+                - Geography (EU/UK would force GDPR posture)
 ```
+
+## Counselor Note
+
+Per Counselor Authority Doctrine Article I, tier may be UPGRADED at any time
+based on new information. Tier CANNOT be downgraded.
+
+If Founder later confirms PoolCurrent collects financial, health, or children's
+data, Counselor must re-tier upward immediately.
 
 ## Required Controls For Assigned Tier
 

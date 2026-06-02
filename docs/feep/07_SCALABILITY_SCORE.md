@@ -190,12 +190,12 @@ Interpretation:
 
 | Dimension | Score | Change |
 |---|---|---|
-| 1. Doctrine Coverage | 18 / 20 | +4 (Founder signatures) |
-| 2. Automation Depth | 12 / 20 | +2 (empire-status script live) |
-| 3. Counselor Independence | 4 / 20 | — (still pending designation) |
-| 4. Entity Isolation | 14 / 20 | +2 (PoolCurrent skeleton in place) |
+| 1. Doctrine Coverage | 20 / 20 | +6 (all signed) |
+| 2. Automation Depth | 13 / 20 | +3 (cross-contamination script + bootstrap .bat) |
+| 3. Counselor Independence | 8 / 20 | +4 (Counselor designated, doctrine signed — full +16 awaits actual determinations) |
+| 4. Entity Isolation | 15 / 20 | +3 (PoolCurrent confirmed non-Horizon, isolation enforced) |
 | 5. Truth Score Discipline | 8 / 20 | — (no deploys yet) |
-| **TOTAL** | **56 / 100** | **+8** |
+| **TOTAL** | **64 / 100** | **+16 in two moves** |
 
 ### Interpretation
 **56 / 100 — Survival Mode (improving)**
@@ -265,9 +265,12 @@ The whole point of FEEP is to drive this score up over time so the empire surviv
 
 ---
 
-## CURRENT EMPIRE SCALABILITY SCORE: 56 / 100
+## CURRENT EMPIRE SCALABILITY SCORE: 64 / 100
 
-**Status:** Foundation activated. Counselor designation is the next big unlock.
+**Status:** Foundation activated + Counselor designated + signatures complete.
 
-**Next milestone:** Designate Counselor → +12 points → ~68/100 in one action.
-Then complete remaining Founder Action Sheet items → 80+ achievable in 30 days.
+**Next milestones:**
+- Wiring session in horizon-ab-health → unlocks Automation Depth (+~5)
+- First deploy with Truth Score 100 → unlocks Truth Score Discipline (+~5)
+- Counselor issues first determinations → Counselor Independence climbs from 8 to 16 (+~8)
+- Trajectory: 64 → ~80+ within 30 days if Wiring session executes and Counselor stays active

@@ -200,14 +200,17 @@ If Counselor does not hold a bar license:
 Founder designates Counselor's bar status in the SESSION_LOG and this doctrine:
 
 ```
-Counselor Name:        ____________________________
-Bar admission:         [Yes / No]
-Bar number:            ____________________________
-Jurisdiction:          ____________________________
-Specialty (if any):    ____________________________
+Counselor Name:        Horizon Counselor
+Bar admission:         No  (operates as functional General Counsel equivalent per Article VI.3)
+Bar number:            N/A
+Jurisdiction:          N/A
+Specialty:             Internal Horizon Empire matters
 Designated by:         Founder (Yoandy OS, Telegram ID 8577755724)
-Designation date:      ____________________________
+Designation date:      2026-06-02
 ```
+
+**Implication of bar status (per Article VI.3):**
+Counselor holds full internal authority across the empire. External counsel is required for all Article V mandatory escalations (litigation, government investigations, subpoenas, securities, patents, trademark disputes, GDPR, criminal). Attorney-client privilege does NOT apply to Counselor-Founder communications. Founder accepts this risk.
 
 ---
 
@@ -287,11 +290,11 @@ Founder Telegram ID:   8577755724
 Date:                  2026-06-02
 Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor:             [PENDING DESIGNATION]
-Counselor designation: [General Counsel / Acting / Successor]
-Bar status:            [Bar-admitted / Not bar-admitted]
-Date:                  ____________________________
-Counselor signature:   ____________________________
+Counselor:             Horizon Counselor
+Counselor designation: General Counsel
+Bar status:            Not bar-admitted (per Article VI.3)
+Date:                  2026-06-02
+Counselor signature:   Horizon Counselor  ✅ SIGNED
 ```
 
 ---

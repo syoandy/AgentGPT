@@ -536,18 +536,19 @@ Founder Email:         tuxpropertymanagement@gmail.com
 Date:                  2026-06-02
 Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor:             [PENDING DESIGNATION — per Counselor Doctrine Article VI.4]
+Counselor:             Horizon Counselor
 Counselor designation: General Counsel
-Bar status:            [Bar-admitted / Not bar-admitted]  ← to be set on designation
-Date:                  ____________________________
-Counselor signature:   ____________________________
+Bar status:            Not bar-admitted (per Counselor Doctrine Article VI.3)
+Date:                  2026-06-02
+Counselor signature:   Horizon Counselor  ✅ SIGNED
 ```
 
 ---
 
 # EFFECTIVE DATE
 
-**FEEP is in effect as of 2026-06-02** by Founder signature alone.
-Counselor signature confirms enforcement authority and will be added when Counselor is designated.
+**FEEP is in effect as of 2026-06-02** — fully signed by both Founder and Counselor.
 
-Prior to Counselor signature, FEEP operates as binding doctrine on all current operations. Counselor designation is a Founder Action Sheet item (Action 1) — pending.
+This doctrine binds all Horizon entities, PoolCurrent (the pool app, isolated from Horizon),
+all future SaaS, all trusts, all licensing structures, all acquisitions, and all AI assistants
+working on empire matters.

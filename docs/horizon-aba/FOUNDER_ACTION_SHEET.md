@@ -7,13 +7,13 @@
 
 | Action | Status | Completed |
 |---|---|---|
-| 1. Designate Counselor | 🔲 PENDING | — |
-| 2. Sign Doctrines | ✅ DONE | 2026-06-02 |
-| 3. Fill Data Dictionary | 🔲 PENDING | — |
-| 4. Send Stripe BAA email | 🔲 PENDING | — |
-| 5. Send Email BAA email | 🔲 PENDING | — |
-| 6. Start wiring session | 🔲 PENDING | — |
-| 7. Counselor approval | 🔲 PENDING — depends on #1 + #3 | — |
+| 1. Designate Counselor | ✅ DONE — "Horizon Counselor", not bar-admitted | 2026-06-02 |
+| 2. Sign Doctrines | ✅ DONE — Founder + Counselor signatures applied | 2026-06-02 |
+| 3. Fill Data Dictionary | 🔲 PENDING — see DATA_DICTIONARY_PLAIN_ENGLISH.md for plain explanation | — |
+| 4. Send Stripe BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
+| 5. Send Email BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
+| 6. Start wiring session | 🔲 PENDING — run `wiring-kit/start-horizon-wiring.bat` to bootstrap | — |
+| 7. Counselor approval | 🔲 PENDING — depends on #3 + #6 | — |
 
 ---
 

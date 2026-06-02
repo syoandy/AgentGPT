@@ -265,10 +265,10 @@ Founder Telegram ID:   8577755724
 Date:                  2026-06-02
 Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor (acknowledges role): [PENDING DESIGNATION]
-Date:                          ________________
+Counselor (acknowledges role): Horizon Counselor  ✅ ACKNOWLEDGED
+Date:                          2026-06-02
 
-Acting Authority (acknowledges role): [PENDING DESIGNATION]
+Acting Authority (acknowledges role): [PENDING — Founder to designate personal Acting Authority]
 Date:                                 ________________
 
 Chief of Staff (when appointed): [PENDING APPOINTMENT]
