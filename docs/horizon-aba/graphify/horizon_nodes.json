@@ -145,6 +145,25 @@
       "file": "docs/horizon-aba/MANDATORY_RULES.md"
     },
     {
+      "id": "feep-master",
+      "type": "doctrine",
+      "label": "FEEP — Founder Empire Execution Protocol",
+      "articles": 18,
+      "scope": "Empire-wide — all entities, all sessions, all AI",
+      "amendment": "FEEP Article XV procedure only",
+      "supporting_docs": [
+        "Universal Governance Template",
+        "Universal App Build Doctrine",
+        "Universal Deployment Doctrine",
+        "Universal Audit Matrix",
+        "Cross-Company Isolation",
+        "Future Company Onboarding",
+        "Empire Scalability Score"
+      ],
+      "current_scalability_score": "48 / 100",
+      "file": "docs/feep/00_FEEP_MASTER.md"
+    },
+    {
       "id": "stripe-baa",
       "type": "legal",
       "label": "Stripe Healthcare BAA",
@@ -179,7 +198,11 @@
     { "from": "hipaa-review", "to": "horizon-counselor", "type": "approved-by" },
     { "from": "horizon-counselor", "to": "counselor-doctrine", "type": "governed-by" },
     { "from": "horizon-counselor", "to": "mandatory-rules", "type": "enforces" },
+    { "from": "horizon-counselor", "to": "feep-master", "type": "enforces" },
+    { "from": "feep-master", "to": "counselor-doctrine", "type": "parent-of" },
+    { "from": "feep-master", "to": "mandatory-rules", "type": "parent-of" },
     { "from": "horizon-aba", "to": "mandatory-rules", "type": "bound-by" },
+    { "from": "horizon-aba", "to": "feep-master", "type": "bound-by" },
     { "from": "horizon-counselor", "to": "horizon-aba", "type": "has-authority-over" },
     { "from": "hipaa-review", "to": "stripe-baa", "type": "requires" },
     { "from": "hipaa-review", "to": "email-baa", "type": "requires" },

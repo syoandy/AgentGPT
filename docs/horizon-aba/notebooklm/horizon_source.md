@@ -32,6 +32,28 @@ Five compliance components are now ready to wire into the Horizon codebase:
 - Google Play billing determination (is there an Android app?)
 - Code-level verification of existing Stripe flow, checkout screens, and cancellation
 
+### FEEP — Empire-Wide Master Doctrine
+The Founder Empire Execution Protocol (FEEP) is the master operating system for
+all Yoandy OS empire entities. Horizon ABA Health operates under FEEP as the
+first reference implementation.
+
+**FEEP consists of 8 documents** in `docs/feep/`:
+- **00_FEEP_MASTER.md** — 18 articles: Founder Supremacy, Counselor structure,
+  Truth Source rule, Cross-contamination prevention, Security Tiers, Financial
+  doctrine, Legal compliance chain, Automation law, Truth Score, Launch sequence,
+  Acquisition sequence, Audit doctrine, Memory order, Chain of command, Amendment
+  procedure, Expansion rules, Emergency override, Doctrine stack
+- **01_UNIVERSAL_GOVERNANCE_TEMPLATE.md** — per-entity governance template
+- **02_UNIVERSAL_APP_BUILD_DOCTRINE.md** — code, stack, security per tier
+- **03_UNIVERSAL_DEPLOYMENT_DOCTRINE.md** — Truth Source rule + rollout phases
+- **04_UNIVERSAL_AUDIT_MATRIX.md** — quarterly + annual audit cadence
+- **05_CROSS_COMPANY_ISOLATION.md** — hard isolation enforcement
+- **06_FUTURE_COMPANY_ONBOARDING.md** — greenfield + acquisition paths
+- **07_SCALABILITY_SCORE.md** — quarterly empire readiness score (0-100)
+
+**Current Empire Scalability Score: 48 / 100** (Foundation laid, operational
+activation pending Founder Action Sheet completion).
+
 ### Legal Authority — Counselor Authority Doctrine
 Horizon Counselor holds **supreme internal legal authority** across all Horizon
 entities under the Counselor Authority Doctrine (Articles I–XI). Counselor
