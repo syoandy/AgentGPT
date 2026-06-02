@@ -284,10 +284,10 @@ on the date of joint signature.
 ```
 Founder:               Yoandy OS
 Founder Telegram ID:   8577755724
-Date:                  ____________________________
-Founder signature:     ____________________________
+Date:                  2026-06-02
+Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor:             ____________________________
+Counselor:             [PENDING DESIGNATION]
 Counselor designation: [General Counsel / Acting / Successor]
 Bar status:            [Bar-admitted / Not bar-admitted]
 Date:                  ____________________________

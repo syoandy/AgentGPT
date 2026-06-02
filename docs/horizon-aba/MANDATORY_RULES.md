@@ -237,10 +237,10 @@ Prior versions retained in git history.
 
 ```
 Founder:     Yoandy OS (Telegram ID: 8577755724)
-Date:        2026-06-01
-Signature:   ____________________________
+Date:        2026-06-02
+Signature:   Yoandy OS  ✅ SIGNED
 
-Counselor:   ____________________________
+Counselor:   [PENDING DESIGNATION]
 Date:        ____________________________
 Signature:   ____________________________
 ```

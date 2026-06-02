@@ -533,12 +533,12 @@ Per-entity implementations:
 Founder:               Yoandy OS
 Founder Telegram ID:   8577755724
 Founder Email:         tuxpropertymanagement@gmail.com
-Date:                  ____________________________
-Founder signature:     ____________________________
+Date:                  2026-06-02
+Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor:             ____________________________
+Counselor:             [PENDING DESIGNATION — per Counselor Doctrine Article VI.4]
 Counselor designation: General Counsel
-Bar status:            [Bar-admitted / Not bar-admitted]
+Bar status:            [Bar-admitted / Not bar-admitted]  ← to be set on designation
 Date:                  ____________________________
 Counselor signature:   ____________________________
 ```
@@ -547,6 +547,7 @@ Counselor signature:   ____________________________
 
 # EFFECTIVE DATE
 
-FEEP takes effect on Founder signature. Counselor signature confirms enforcement authority.
+**FEEP is in effect as of 2026-06-02** by Founder signature alone.
+Counselor signature confirms enforcement authority and will be added when Counselor is designated.
 
-Prior to full signature, FEEP operates as interim doctrine — binding on this session and on all subsequent AI assistant sessions on Horizon work.
+Prior to Counselor signature, FEEP operates as binding doctrine on all current operations. Counselor designation is a Founder Action Sheet item (Action 1) — pending.

@@ -262,16 +262,16 @@ If an AI assistant is invoked during Founder Unavailable / Incapacitated / Decea
 ```
 Founder:               Yoandy OS
 Founder Telegram ID:   8577755724
-Date:                  ____________________________
-Founder signature:     ____________________________
+Date:                  2026-06-02
+Founder signature:     Yoandy OS  ✅ SIGNED
 
-Counselor (acknowledges role): ________________
+Counselor (acknowledges role): [PENDING DESIGNATION]
 Date:                          ________________
 
-Acting Authority (acknowledges role): _____________
-Date:                                 _____________
+Acting Authority (acknowledges role): [PENDING DESIGNATION]
+Date:                                 ________________
 
-Chief of Staff (when appointed): ________________
+Chief of Staff (when appointed): [PENDING APPOINTMENT]
 Date:                            ________________
 ```
 
@@ -279,6 +279,6 @@ Date:                            ________________
 
 ## 14. EFFECTIVE DATE
 
-Effective on Founder signature alone (Acting Authority and others acknowledge but Founder controls activation).
+**Founder Succession Doctrine is in effect as of 2026-06-02** by Founder signature.
 
-Until signed, this doctrine functions as interim plan — Counselor + AI assistants will follow it in absence of any other instruction if Founder becomes unreachable.
+Counselor, Acting Authority, and Chief of Staff acknowledgments will be added as those roles are designated. Doctrine is binding now regardless — it tells Counselor + AI assistants what to do if Founder becomes unreachable.

@@ -1,7 +1,19 @@
 # Founder Action Sheet — Last Mile to 100%
-**Current readiness:** ~72%  
+**Current readiness:** ~78% (Action 2 complete)  
 **After completing this sheet:** ~95% (the final 5% is Counselor turnaround)  
-**Total effort:** ~45 minutes of your time
+**Total effort:** ~40 minutes of your time remaining
+
+## Action Status
+
+| Action | Status | Completed |
+|---|---|---|
+| 1. Designate Counselor | 🔲 PENDING | — |
+| 2. Sign Doctrines | ✅ DONE | 2026-06-02 |
+| 3. Fill Data Dictionary | 🔲 PENDING | — |
+| 4. Send Stripe BAA email | 🔲 PENDING | — |
+| 5. Send Email BAA email | 🔲 PENDING | — |
+| 6. Start wiring session | 🔲 PENDING | — |
+| 7. Counselor approval | 🔲 PENDING — depends on #1 + #3 | — |
 
 ---
 

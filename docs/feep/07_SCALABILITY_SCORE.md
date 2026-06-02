@@ -42,20 +42,22 @@ Interpretation:
 | 4 | Some written rules exist but no unifying doctrine |
 | 0 | Everything in Founder's head |
 
-### Current Score (2026-06-01)
-**Score: 14 / 20**
-- ✅ FEEP master written
-- ✅ Counselor Authority Doctrine written
-- ✅ Mandatory Rules written
+### Current Score (2026-06-02 — updated after Founder signatures)
+**Score: 18 / 20**
+- ✅ FEEP master written + Founder signed
+- ✅ Counselor Authority Doctrine written + Founder signed
+- ✅ Mandatory Rules written + Founder signed
+- ✅ Founder Succession Doctrine written + Founder signed
 - ✅ Universal Governance Template written
 - ✅ Universal App Build Doctrine written
 - ✅ Universal Deployment Doctrine written
 - ✅ Universal Audit Matrix written
 - ✅ Cross-Company Isolation written
 - ✅ Future Company Onboarding written
-- ❌ Signatures pending on FEEP, Counselor Doctrine, Mandatory Rules
-- ❌ Only one entity (Horizon ABA) partially implementing
-- ❌ PoolCurrent / Legal Fortress have no entity-level doctrine docs yet
+- ✅ Legal Fortress Doctrine written
+- ✅ PoolCurrent skeleton created
+- ❌ Counselor signatures still pending (Counselor not yet designated)
+- ❌ PoolCurrent not yet activated (awaiting Founder description)
 
 ### What Gets Us To 20
 - All doctrine documents signed
@@ -186,17 +188,20 @@ Interpretation:
 
 ## 7. CURRENT TOTAL SCORE
 
-| Dimension | Score |
-|---|---|
-| 1. Doctrine Coverage | 14 / 20 |
-| 2. Automation Depth | 10 / 20 |
-| 3. Counselor Independence | 4 / 20 |
-| 4. Entity Isolation | 12 / 20 |
-| 5. Truth Score Discipline | 8 / 20 |
-| **TOTAL** | **48 / 100** |
+| Dimension | Score | Change |
+|---|---|---|
+| 1. Doctrine Coverage | 18 / 20 | +4 (Founder signatures) |
+| 2. Automation Depth | 12 / 20 | +2 (empire-status script live) |
+| 3. Counselor Independence | 4 / 20 | — (still pending designation) |
+| 4. Entity Isolation | 14 / 20 | +2 (PoolCurrent skeleton in place) |
+| 5. Truth Score Discipline | 8 / 20 | — (no deploys yet) |
+| **TOTAL** | **56 / 100** | **+8** |
 
 ### Interpretation
-**48 / 100 — Survival Mode**
+**56 / 100 — Survival Mode (improving)**
+
+Founder signatures activated 4 core doctrines. Empire scored +8 in one move.
+Largest remaining drag: Counselor not yet designated (costs 16 points alone).
 
 This is honest. The empire has good bones (doctrine written), but the doctrine is not yet operational because:
 - No Counselor designated (biggest single drag — costs 16 points)
@@ -260,8 +265,9 @@ The whole point of FEEP is to drive this score up over time so the empire surviv
 
 ---
 
-## CURRENT EMPIRE SCALABILITY SCORE: 48 / 100
+## CURRENT EMPIRE SCALABILITY SCORE: 56 / 100
 
-**Status:** Foundation laid, operational activation pending.
+**Status:** Foundation activated. Counselor designation is the next big unlock.
 
-**Next milestone:** 80+ score within 30 days of Founder Action Sheet completion.
+**Next milestone:** Designate Counselor → +12 points → ~68/100 in one action.
+Then complete remaining Founder Action Sheet items → 80+ achievable in 30 days.
