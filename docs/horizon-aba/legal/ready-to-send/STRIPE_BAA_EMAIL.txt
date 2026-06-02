@@ -1,0 +1,56 @@
+TO:      healthcare@stripe.com
+FROM:    tuxpropertymanagement@gmail.com
+SUBJECT: BAA Request — Horizon ABA Health (Healthcare SaaS, Pre-Launch)
+
+---
+
+Hello Stripe Healthcare Team,
+
+I'm writing to request a Business Associate Agreement (BAA) for Horizon ABA Health,
+a healthcare SaaS application serving Applied Behavior Analysis (ABA) therapy providers.
+
+Our use case:
+- We process recurring subscription payments from ABA therapy providers
+- Some billing metadata may include client identifiers tied to therapy services
+- This creates potential PHI exposure under HIPAA, requiring a BAA
+
+Please confirm:
+1. Eligibility for Stripe's healthcare account tier
+2. BAA terms and how to execute
+3. Any required changes to our existing Stripe account configuration
+4. Pricing impact (if any) of moving to the healthcare tier
+5. Whether Stripe Atlas, Stripe Billing, Stripe Tax, and Stripe Connect are all
+   covered under the BAA
+
+Our current Stripe account details:
+- Account email: [FILL IN]
+- Account ID: [FILL IN — visible in Stripe Dashboard URL]
+- Business legal name: [FILL IN]
+- Business address: [FILL IN]
+- EIN: [FILL IN]
+
+We have not yet launched publicly and would like the BAA in place before our
+first paid user signs up.
+
+Thank you,
+
+Yoandy OS
+Founder, Horizon ABA Health
+tuxpropertymanagement@gmail.com
+Telegram: @ (8577755724)
+
+---
+
+[BEFORE SENDING]
+Fill in 5 items above:
+  - Account email (you Stripe login)
+  - Account ID (visible in dashboard.stripe.com/{ID})
+  - Business legal name (the entity name on file)
+  - Business address (the entity's address)
+  - EIN (Federal Employer ID Number)
+
+[AFTER SENDING]
+1. Update docs/horizon-aba/SESSION_LOG.md:
+   "BAA email sent to Stripe healthcare team on YYYY-MM-DD"
+2. Watch tuxpropertymanagement@gmail.com inbox for response (3-10 business days)
+3. When BAA arrives, route to Counselor for review before signing

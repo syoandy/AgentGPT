@@ -5,6 +5,46 @@
 
 ---
 
+## Session 13 — 2026-06-02
+
+**Goal:** Build friction-reducers for next score-movers + missing structural pieces  
+**Outcome:** 8 new artifacts shipped; empire now self-navigating for new sessions and counselor onboarding
+
+### Work Completed
+- `templates/COUNSELOR_DETERMINATION_TEMPLATE.md` — what Counselor fills in to respond to approval package (13 binary questions formatted)
+- `templates/COUNSELOR_ONBOARDING.md` — Day-1 reading list + first-week tasks for new Counselor
+- `templates/TRUTH_SCORE_TEMPLATE.md` — ready-to-use Truth Score template per FEEP III + IX
+- `legal/ready-to-send/STRIPE_BAA_EMAIL.txt` — copy-paste-ready Stripe healthcare BAA email
+- `legal/ready-to-send/POSTMARK_BAA_EMAIL.txt` — copy-paste-ready email provider BAA request
+- `feep/legal-fortress/risk-register.md` — 16 active risks tracked per Legal Fortress §3
+- `scripts/cross-contamination-audit.sh` — automated quarterly audit per FEEP Article IV.5
+- First cross-contamination audit run: `docs/feep/audits/cross-contamination-2026-Q2.md`
+- `EMPIRE_README.md` (repo root) — navigation hub for any new session, Founder, Counselor
+
+### Why This Matters
+Action items 1, 4, 5, 7 on Founder Action Sheet now have pre-built artifacts. Founder has less typing to do; Counselor has less reading to do; new AI sessions have a navigable starting point.
+
+### Files Changed
+- `EMPIRE_README.md` — created (repo root)
+- `docs/horizon-aba/templates/COUNSELOR_DETERMINATION_TEMPLATE.md` — created
+- `docs/horizon-aba/templates/COUNSELOR_ONBOARDING.md` — created
+- `docs/horizon-aba/templates/TRUTH_SCORE_TEMPLATE.md` — created
+- `docs/horizon-aba/legal/ready-to-send/STRIPE_BAA_EMAIL.txt` — created
+- `docs/horizon-aba/legal/ready-to-send/POSTMARK_BAA_EMAIL.txt` — created
+- `docs/feep/legal-fortress/risk-register.md` — created
+- `scripts/cross-contamination-audit.sh` — created (executable)
+- `docs/feep/audits/cross-contamination-2026-Q2.md` — generated
+
+### Handoff Status (Rule 6)
+- Obsidian: ✅ SYNCED (auto-pull active)
+- Graphify: ⛔ BLOCKED — manual import (re-import horizon_nodes.json if updated)
+- NotebookLM: ⛔ BLOCKED — manual upload
+- Verification: cross-contamination-audit.sh executed cleanly, no findings
+- Remaining gaps: Same as Session 12 — Counselor designation, Data Dictionary content, BAA emails, wiring session
+- Next milestone: Designate Counselor → unlocks Counselor Independence dimension
+
+---
+
 ## Session 12 — 2026-06-02
 
 **Goal:** Apply Founder signature to all pending doctrines per "signature granted"  

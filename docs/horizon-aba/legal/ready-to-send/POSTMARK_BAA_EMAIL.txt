@@ -1,0 +1,63 @@
+TO:      support@postmarkapp.com
+FROM:    tuxpropertymanagement@gmail.com
+SUBJECT: HIPAA BAA Request — Healthcare SaaS, Pre-Launch
+
+---
+
+Hello Postmark Support,
+
+I'm requesting a Business Associate Agreement (BAA) for Horizon ABA Health,
+a healthcare SaaS application that will send transactional emails to users
+receiving Applied Behavior Analysis therapy services.
+
+Use case:
+- Trial reminder emails
+- Subscription receipts
+- Cancellation confirmations
+- Account notifications
+- Password reset and authentication
+
+Email content may include user names and plan information tied to therapy
+services, creating potential PHI exposure under HIPAA.
+
+Please confirm:
+1. Your service is HIPAA-eligible and a BAA is available
+2. Which plan tier is required
+3. BAA execution process and timeline
+4. Whether subprocessors are covered
+5. Any technical configuration changes required (e.g., disabling open/click
+   tracking to avoid PHI leakage to third parties)
+
+Our business details:
+- Business legal name: [FILL IN]
+- Business address: [FILL IN]
+- EIN: [FILL IN]
+- Expected monthly email volume: [estimate, e.g., "under 10k"]
+
+Thank you,
+
+Yoandy OS
+Founder, Horizon ABA Health
+tuxpropertymanagement@gmail.com
+
+---
+
+[BEFORE SENDING]
+Fill in 4 items above (business name, address, EIN, monthly volume estimate).
+
+[ALTERNATIVE PROVIDERS — IF YOU'RE NOT USING POSTMARK]
+Send a similar email to your chosen provider:
+- SendGrid: compliance@sendgrid.com (Pro plan required)
+- AWS SES: BAA via AWS Artifact in your AWS console (no email needed)
+- Google Workspace: Admin Console > Account > Legal and compliance
+- Mailgun: requires HIPAA add-on, contact sales
+
+[AFTER SENDING]
+1. Update docs/horizon-aba/SESSION_LOG.md
+2. Watch inbox for response (1-2 weeks)
+3. Route BAA to Counselor for review before signing
+4. After signing, configure email provider:
+   - Disable open/click tracking through non-BAA pixel servers
+   - Enable encryption at rest + STARTTLS
+   - Limit log retention
+   - Enable audit logging
