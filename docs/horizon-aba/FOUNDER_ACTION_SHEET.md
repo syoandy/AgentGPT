@@ -12,7 +12,7 @@
 | 3. Fill Data Dictionary | ✅ DONE — Strawman approved + signed by Founder 2026-06-03; ready for Counselor | 2026-06-03 |
 | 4. Send Stripe BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
 | 5. Send Email BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
-| 6. Start wiring session | 🔲 PENDING — run `wiring-kit/start-horizon-wiring.bat` to bootstrap | — |
+| 6. Start wiring session | 🔲 PENDING — copy `wiring-kit/WIRING_PACKAGE_PORTABLE.md` into horizon-ab-health repo + open Claude Code session | — |
 | 7. Counselor approval | 🔲 PENDING — depends on #3 + #6 | — |
 
 ---
@@ -96,12 +96,16 @@ Expected reply: 1–2 weeks.
 
 This is the big one — unlocks the final 12%.
 
-1. Open a **new Claude Code session**
-2. Set working directory / repo: `syoandy/horizon-ab-health`
-3. Open `docs/horizon-aba/wiring-kit/NEW_SESSION_PROMPT.md`
-4. Copy everything between the ⬇️ and ⬆️ markers
-5. Paste it as the first message in the new session
-6. The new Claude will do the wiring autonomously
+**NEW: Portable package available — zero cross-repo dependencies**
+
+1. Open `syoandy/horizon-ab-health` in Claude Code (CLI or claude.ai/code)
+2. Copy the file `docs/horizon-aba/wiring-kit/WIRING_PACKAGE_PORTABLE.md` from this repo into any folder in `horizon-ab-health`
+   - Example: `cp ~/Documents/HorizonVault/docs/horizon-aba/wiring-kit/WIRING_PACKAGE_PORTABLE.md ~/Documents/horizon-ab-health/WIRING_PACKAGE_PORTABLE.md`
+3. In the new Claude Code session, say: `"Read WIRING_PACKAGE_PORTABLE.md and execute it step by step"`
+4. The new Claude has everything it needs inline — no internet, no cross-repo reads required
+5. When it opens a PR, review against `wiring-kit/checklist.md` before merging
+
+**Alternative (Windows):** Run `wiring-kit/start-horizon-wiring.bat` — it clones the repo and opens Claude Code.
 
 Watch the new session work. When it opens a PR, review against `wiring-kit/checklist.md` before merging.
 
