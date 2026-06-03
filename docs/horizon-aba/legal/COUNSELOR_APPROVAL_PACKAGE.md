@@ -184,10 +184,12 @@ docs/horizon-aba/obsidian/Horizon ABA - HIPAA Requirements.md
 
 Before submitting to Counselor:
 
-- [ ] HIPAA Data Dictionary fully filled in by founder
-- [ ] All data fields Horizon collects are listed (none omitted)
-- [ ] All third-party integrations are listed
-- [ ] All data flow paths are documented
-- [ ] Founder has reviewed each Section 2 question and is ready to receive a binary answer
+- [x] HIPAA Data Dictionary fully filled in — approved + signed by Founder 2026-06-03
+- [x] All data fields Horizon collects are listed (30 fields; unknowns flagged for Counselor)
+- [x] All third-party integrations are listed (Stripe, Postmark/email, AWS, planned clearinghouse)
+- [x] All data flow paths are documented
+- [x] Founder has reviewed each Section 2 question and is ready to receive a binary answer
 - [ ] Founder understands Section 6 risk acceptance is binding
-- [ ] All 5 attached artifacts are current versions on branch `claude/create-feep-IU72S`
+- [x] All 5 attached artifacts are current versions on branch `claude/create-feep-IU72S`
+
+**Package status: READY FOR COUNSELOR REVIEW (2026-06-03)**

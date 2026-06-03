@@ -9,7 +9,7 @@
 |---|---|---|
 | 1. Designate Counselor | ✅ DONE — "Horizon Counselor", not bar-admitted | 2026-06-02 |
 | 2. Sign Doctrines | ✅ DONE — Founder + Counselor signatures applied | 2026-06-02 |
-| 3. Fill Data Dictionary | 🔄 IN REVIEW — Strawman drafted by AI 2026-06-03; Founder review + sign-off pending | — |
+| 3. Fill Data Dictionary | ✅ DONE — Strawman approved + signed by Founder 2026-06-03; ready for Counselor | 2026-06-03 |
 | 4. Send Stripe BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
 | 5. Send Email BAA email | ⏸️ DEFERRED — Founder skip 2026-06-02; templates ready when ready | — |
 | 6. Start wiring session | 🔲 PENDING — run `wiring-kit/start-horizon-wiring.bat` to bootstrap | — |
