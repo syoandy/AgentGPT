@@ -18,6 +18,7 @@ import { TaskWindow } from "../components/TaskWindow";
 import { useAuth } from "../hooks/useAuth";
 import type { Message } from "../types/agentTypes";
 import { useAgent } from "../hooks/useAgent";
+import { useMemory } from "../hooks/useMemory";
 
 const Home: NextPage = () => {
   const { session, status } = useAuth();
@@ -39,6 +40,7 @@ const Home: NextPage = () => {
   const [showSettingsDialog, setShowSettingsDialog] = React.useState(false);
   const [hasSaved, setHasSaved] = React.useState(false);
   const agentUtils = useAgent();
+  const memory = useMemory();
 
   useEffect(() => {
     const key = "agentgpt-modal-opened-new";
@@ -80,7 +82,9 @@ const Home: NextPage = () => {
       handleAddMessage,
       () => setAgent(null),
       { customApiKey, customModelName, customTemperature, customMaxLoops },
-      session ?? undefined
+      session ?? undefined,
+      memory.recall,
+      memory.remember
     );
     setAgent(agent);
     setHasSaved(false);
