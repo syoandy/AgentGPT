@@ -104,8 +104,8 @@ model Memory {
   id         String   @id @default(cuid())
   userId     String
   agentId    String?
-  namespace  String   @db.VarChar(191)
-  kind       String   @db.VarChar(32)
+  namespace  String
+  kind       String
   content    String   @db.Text
   metadata   Json?
   createDate DateTime @default(now())
