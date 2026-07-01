@@ -8,3 +8,6 @@ sed -ie 's/@db.Text//' schema.prisma
 # supported on the SQLite dev/CI datasource, so strip them for that path only.
 sed -ie 's/, "fullTextIndex"//' schema.prisma
 sed -ie '/@@fulltext/d' schema.prisma
+# Prisma's SQLite connector does not support the Json scalar type; use String
+# for the SQLite dev/CI path only (MySQL production keeps real Json).
+sed -ie 's/Json?/String?/' schema.prisma
