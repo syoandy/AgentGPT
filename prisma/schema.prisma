@@ -1,6 +1,6 @@
 generator client {
   provider        = "prisma-client-js"
-  previewFeatures = ["ReferentialIntegrity"]
+  previewFeatures = ["ReferentialIntegrity", "fullTextIndex"]
 }
 
 datasource db {
@@ -51,6 +51,7 @@ model User {
   accounts Account[]
   sessions Session[]
   Agent    Agent[]
+  Memory   Memory[]
 
   @@index([email])
 }
@@ -93,4 +94,25 @@ model AgentTask {
 
   @@index([agentId])
   @@index([type])
+}
+
+// Horizon AI in-house long-term memory (lexical, MySQL FULLTEXT).
+// Scoped to a user (the tenant boundary); namespace groups memories per agent
+// goal. agentId optionally links a saved Agent but is not a hard relation so
+// memory survives independently of agent lifecycle.
+model Memory {
+  id         String   @id @default(cuid())
+  userId     String
+  agentId    String?
+  namespace  String
+  kind       String
+  content    String   @db.Text
+  metadata   Json?
+  createDate DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, namespace, createDate])
+  @@index([agentId])
+  @@fulltext([content])
 }

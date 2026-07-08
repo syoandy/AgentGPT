@@ -2,6 +2,7 @@ import {
   createModel,
   startGoalPrompt,
   executeTaskPrompt,
+  executeTaskWithMemoryPrompt,
   createTasksPrompt,
 } from "../utils/prompts";
 import type { ModelSettings } from "../utils/types";
@@ -23,15 +24,17 @@ async function startGoalAgent(modelSettings: ModelSettings, goal: string) {
 async function executeTaskAgent(
   modelSettings: ModelSettings,
   goal: string,
-  task: string
+  task: string,
+  memory?: string
 ) {
+  const hasMemory = typeof memory === "string" && memory.trim().length > 0;
+
+  // Falls back to the original prompt when there is no memory, so existing
+  // behavior is byte-for-byte unchanged for anonymous/no-memory runs.
   const completion = await new LLMChain({
     llm: createModel(modelSettings),
-    prompt: executeTaskPrompt,
-  }).call({
-    goal,
-    task,
-  });
+    prompt: hasMemory ? executeTaskWithMemoryPrompt : executeTaskPrompt,
+  }).call(hasMemory ? { goal, task, memory } : { goal, task });
 
   return completion.text as string;
 }
@@ -65,7 +68,8 @@ interface AgentService {
   executeTaskAgent: (
     modelSettings: ModelSettings,
     goal: string,
-    task: string
+    task: string,
+    memory?: string
   ) => Promise<string>;
   createTasksAgent: (
     modelSettings: ModelSettings,
@@ -102,7 +106,8 @@ const MockAgentService: AgentService = {
   executeTaskAgent: async (
     modelSettings: ModelSettings,
     goal: string,
-    task: string
+    task: string,
+    memory?: string
   ) => {
     return await new Promise((resolve) => resolve("Result: " + task));
   },

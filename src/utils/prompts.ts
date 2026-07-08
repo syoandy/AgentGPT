@@ -2,6 +2,7 @@ import { OpenAI } from "langchain/llms/openai";
 import { PromptTemplate } from "langchain/prompts";
 import type { ModelSettings } from "./types";
 import { GPT_35_TURBO } from "./constants";
+import { EXECUTE_TASK_WITH_MEMORY_TEMPLATE } from "./memory";
 
 export const createModel = (settings: ModelSettings) =>
   new OpenAI({
@@ -25,6 +26,13 @@ export const executeTaskPrompt = new PromptTemplate({
   template:
     "You are an autonomous task execution AI called AgentGPT. You have the following objective `{goal}`. You have the following tasks `{task}`. Execute the task and return the response as a string.",
   inputVariables: ["goal", "task"],
+});
+
+// Variant of executeTaskPrompt that injects recalled long-term memory as
+// clearly delimited, data-only context (see src/utils/memory.ts).
+export const executeTaskWithMemoryPrompt = new PromptTemplate({
+  template: EXECUTE_TASK_WITH_MEMORY_TEMPLATE,
+  inputVariables: ["goal", "task", "memory"],
 });
 
 export const createTasksPrompt = new PromptTemplate({

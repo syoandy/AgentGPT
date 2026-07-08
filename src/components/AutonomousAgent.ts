@@ -9,9 +9,25 @@ import {
 import type { Session } from "next-auth";
 import type { Message } from "../types/agentTypes";
 import { env } from "../env/client.mjs";
+import {
+  buildMemoryBlock,
+  type MemoryKind,
+  type RankedMemory,
+} from "../utils/memory";
 
 const TIMEOUT_LONG = 1000;
 const TIMOUT_SHORT = 800;
+
+type RecallFn = (args: {
+  namespace: string;
+  query: string;
+  k?: number;
+}) => Promise<RankedMemory[]>;
+type RememberFn = (args: {
+  namespace: string;
+  kind: MemoryKind;
+  content: string;
+}) => Promise<unknown>;
 
 class AutonomousAgent {
   name: string;
@@ -24,6 +40,10 @@ class AutonomousAgent {
   shutdown: () => void;
   numLoops = 0;
   session?: Session;
+  // Optional long-term memory callbacks (authenticated users only). When
+  // undefined the loop runs exactly as before, with no memory.
+  recall?: RecallFn;
+  remember?: RememberFn;
 
   constructor(
     name: string,
@@ -31,7 +51,9 @@ class AutonomousAgent {
     renderMessage: (message: Message) => void,
     shutdown: () => void,
     modelSettings: ModelSettings,
-    session?: Session
+    session?: Session,
+    recall?: RecallFn,
+    remember?: RememberFn
   ) {
     this.name = name;
     this.goal = goal;
@@ -39,6 +61,8 @@ class AutonomousAgent {
     this.shutdown = shutdown;
     this.modelSettings = modelSettings;
     this.session = session;
+    this.recall = recall;
+    this.remember = remember;
   }
 
   async run() {
@@ -181,21 +205,60 @@ class AutonomousAgent {
   }
 
   async executeTask(task: string): Promise<string> {
+    const memory = await this.recallMemory(task);
+
+    let result: string;
     if (this.shouldRunClientSide()) {
-      return await AgentService.executeTaskAgent(
+      result = await AgentService.executeTaskAgent(
         this.modelSettings,
         this.goal,
-        task
+        task,
+        memory
       );
+    } else {
+      const res = await axios.post(`/api/execute`, {
+        modelSettings: this.modelSettings,
+        goal: this.goal,
+        task: task,
+        memory: memory,
+      });
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
+      result = res.data.response as string;
     }
 
-    const res = await axios.post(`/api/execute`, {
-      modelSettings: this.modelSettings,
-      goal: this.goal,
-      task: task,
-    });
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access,@typescript-eslint/no-unsafe-argument
-    return res.data.response as string;
+    void this.rememberResult(task, result);
+    return result;
+  }
+
+  // Recall relevant long-term memory for this task. Best-effort: any failure
+  // (or no memory configured) yields undefined and the run continues normally.
+  private async recallMemory(task: string): Promise<string | undefined> {
+    if (!this.recall) return undefined;
+    try {
+      const memories = await this.recall({
+        namespace: this.goal,
+        query: task,
+      });
+      const block = buildMemoryBlock(memories);
+      return block.length > 0 ? block : undefined;
+    } catch (e) {
+      console.error("Memory recall failed (continuing without memory):", e);
+      return undefined;
+    }
+  }
+
+  // Persist the task result as memory. Fire-and-forget and non-fatal.
+  private rememberResult(task: string, result: string): Promise<void> {
+    if (!this.remember) return Promise.resolve();
+    return this.remember({
+      namespace: this.goal,
+      kind: "task_result",
+      content: `Task: ${task}\nResult: ${result}`,
+    })
+      .then(() => undefined)
+      .catch((e) => {
+        console.error("Memory remember failed (non-fatal):", e);
+      });
   }
 
   private shouldRunClientSide() {
